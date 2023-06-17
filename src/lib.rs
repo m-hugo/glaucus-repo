@@ -14,7 +14,7 @@ pub async fn main(
 ) -> Result<Response> {
     console_log!("Hello ?");
     if req.method() != worker::Method::Post {
-        return Response::ok("Hello, \n\nGlaucusLinux user, the syntax is:\n
+        return Response::ok("Hello, \n\nglaucus user, the syntax is:\n
 index:
     wget -qO- --post-data 'action=get&password=glaucus'  https://glaucus.navediew.uk/index
 or  curl -F action=get -F password=glaucus https://glaucus.navediew.uk/index\n
